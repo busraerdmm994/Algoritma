@@ -1,0 +1,2 @@
+# Algoritma
+stnm algo soruları
