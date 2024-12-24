@@ -1,0 +1,14 @@
+dizi=[1,2,-4,-5,-6,-1,9]
+
+def negatif_toplam(dizi, i=0):
+    
+    if i == len(dizi):
+        return 0
+
+    if dizi[i] < 0:
+        return dizi[i] + negatif_toplam(dizi, i + 1)
+    else:
+        return negatif_toplam(dizi, i + 1)
+
+print(negatif_toplam(dizi))
+
