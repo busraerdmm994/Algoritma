@@ -1,0 +1,13 @@
+def ortkatop(n):
+    # Sayı negatifse 0 döndürüyoruz
+    if n < 0:
+        return 0
+    
+    top = 0
+    
+    # 3 veya 5'in katları olan sayıları topluyoruz
+    for i in range(n):
+        if i % 3 == 0 or i % 5 == 0:
+            top += i
+    
+    return top
