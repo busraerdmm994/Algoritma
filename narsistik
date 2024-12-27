@@ -1,0 +1,17 @@
+def narsistik_sayi_mi(sayi):
+    
+    sayi_str = str(sayi)
+    basamak_sayisi = len(sayi_str)
+    
+    
+    toplam = sum(int(basamak) ** basamak_sayisi for basamak in sayi_str)
+    
+
+    return toplam == sayi
+
+
+sayi = int(input("Bir sayı girin: "))
+if narsistik_sayi_mi(sayi):
+    print("Doğru")
+else:
+    print("Yanlış")
